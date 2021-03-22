@@ -16,7 +16,7 @@ contract A {
         contractB = B(_contractB);
     }
     
-    // deposit to this contract with forwarding to contractB
+    // deposit to this contract with forwarding to a contractB
     function deposit(uint _amount) external {
         // owner needs to approve contract A first on token
         token.transferFrom(msg.sender, address(this), _amount);
