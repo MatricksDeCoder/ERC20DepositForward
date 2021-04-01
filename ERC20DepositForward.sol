@@ -3,7 +3,7 @@ pragma solidity ^0.6.0;
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.1.0/contracts/token/ERC20/IERC20.sol";
 
 abstract contract B {
-    function deposit(uint _amount) virtual external;
+    function deposit(uint _amount) virtual external; // its implementation must call transferFrom()
     function withdraw(uint _amount) virtual external;
 }
 
